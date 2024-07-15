@@ -35,6 +35,6 @@ class Content:
 				raise Exception(f"Error open file on path {self.path}")
 		else:
 			if ext == "json":
-				return {"message": "File not found"}, 502
+				return {"message": "File not found"}, 404
 			else:
 				raise Exception(f"Error open file on path {self.path}")
